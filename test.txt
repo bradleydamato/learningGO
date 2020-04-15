@@ -1,0 +1,6 @@
+hi
+no
+yes
+no
+hi
+ok
