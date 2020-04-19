@@ -10,6 +10,9 @@ var r []int = []int{4,5}
 
 
 func main(){
+	//SHORTEST WAY
+	w := append(q[:],r[:]...)
+
 	//SHORTER WAY
 	x :=  append(q[:])
 	x =  append(x,r[:]...)
@@ -24,6 +27,7 @@ func main(){
 			}
 	fmt.Println(n)
 	fmt.Println(x)
+	fmt.Println(w)
 }
 
 
