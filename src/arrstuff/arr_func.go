@@ -28,6 +28,14 @@ func main(){
 	fmt.Println(n)
 	fmt.Println(x)
 	fmt.Println(w)
+	test := reverse(w)
+	fmt.Println(test)
 }
 
-
+//reverse slice of ints in place 
+func reverse(s []int) []int {
+	for i, j := 0,len(s)-1; i < j; i, j = i+1, j-1{
+		s[i],s[j] = s[j],s[i]
+	}
+	return s
+}
